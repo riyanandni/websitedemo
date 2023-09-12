@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var student= new Array("zoya","maya","aman","golu","nihal")
+        Array.prototype.displayItem=function()
+        {
+            for(i=0; i<this.length; i++)
+            {
+                document.write(this[i] + "<br>");
+            }
+        }
+        document.write("student of array <br>");
+       student.displayItem();
+       document.write("<br> number of the array item" +student.length +"<br>");
+
+       document.write("<br> The Sorted student array <br>");
+       student.sort();
+       student.displayItem();
+     
+
+       document.write("<br> the reserved student array <br>");
+       student.reverse();
+       student.displayItem();
+
+       document.write("<br> the removing student of array <br>");
+       student.pop();
+       student.displayItem();
+
+    //    \\\
+
+
+
+
+        </script>
+
+</head>
+<body>
+
+
+    
+</body>
+</html>
